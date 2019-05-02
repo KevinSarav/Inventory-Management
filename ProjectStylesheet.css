@@ -1,0 +1,35 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: 1fr 1em 3fr;
+    grid-gap: 0.3em 0.6em;
+    grid-auto-flow: dense;
+    font-size: 25px;
+}
+
+
+input, select {
+    grid-column: 2/4;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size:20px;
+   
+}
+
+
+.spacing {
+    margin-bottom: 10px;
+}
+
+div{
+    width:300px;
+    height:50px;
+    line-height:150%;
+    
+}
+
+
