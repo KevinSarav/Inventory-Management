@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<ul>
+  <li>ID:               </li>
+  <p id="rand"></p>
+  <li>Product:          </li>
+  <select>
+      <option value="Red Shirt">Red Shirt</option>
+      <option value="Blue Shirt">Blue Shirt</option>
+      <option value="Yellow Shirt">Yellow Shirt</option>
+      <option value="Purple Shirt">Purple Shirt</option>
+    </select>
+  <li>Customer:         </li>
+    <select>
+        <option value="Walmart">Walmart</option>
+        <option value="Target">Target</option>
+        <option value="Ross">Ross</option>
+        <option value="Klein">Klein</option>
+      </select>
+  <li>Product Quantity: </li>
+    <form action="/PhP.php">
+      <input type="text" name="amount">
+    </form>
+</ul>    
+<button type="button">Enter Order</button>
+      
+<script>
+  var number = randomGen();
+  document.getElementById("rand").innerHTML = number;
+
+  function randomGen(){
+    return Math.floor(Math.random() * 1000000);
+  }
+</script>
+</body>
+</html>
